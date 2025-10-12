@@ -42,7 +42,7 @@ time_annering = 10000
 ##############################
 # 対象とする都道府県、市区名(Open Street Mapのロードデータ使用範囲を指定）
 state_name = 'Shizuoka'
-city_name = ('hamamatsu')
+city_name = 'hamamatsu'
 
 ##############################
 # 対象地域のマップ表示中心座標
@@ -909,5 +909,6 @@ if st.session_state['best_tour'] !=None:
 
 if st.session_state['redraw'] != False:
   st.rerun()
+
 
 
