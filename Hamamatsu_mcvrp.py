@@ -31,7 +31,7 @@ import copy  # オブジェクトのディープコピー用
 
 ##############################
 # FixStars 有効なトークンを設定
-api_token = "AE/mpODs9XWW40bvSyBs9UZVIEoOKWmtgZo"  
+api_token = "AE/URHR9FLII4OW9iTl5QArFYqV2KHTcVdI"  
 
 # アニーリング実行回数
 num_annering = 1
@@ -41,12 +41,12 @@ time_annering = 10000
 
 ##############################
 # 対象とする都道府県、市区名(Open Street Mapのロードデータ使用範囲を指定）
-state_name = 'Yamanashi'
-city_name = ('Fujiyoshida', 'Oshino')
+state_name = 'Shizuoka'
+city_name = ('hamamatsu')
 
 ##############################
 # 対象地域のマップ表示中心座標
-mapcenter = [35.4874795, 138.8078556]   #富士吉田市役所
+mapcenter = [34.71091121444535, 137.72610588222184]   #浜松市役所
 
 ##############################
 # 一人当たりの必要物資重量(Weight of supplies needed per person)
@@ -909,3 +909,4 @@ if st.session_state['best_tour'] !=None:
 
 if st.session_state['redraw'] != False:
   st.rerun()
+
