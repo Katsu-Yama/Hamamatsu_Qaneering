@@ -56,7 +56,7 @@ wgt_per = 4.0   # Kg
 # Streamlit アプリのページ設定
 #########################################
 st.set_page_config(
-    page_title="富士吉田市周辺　救援物資配送_最適ルート",  # ブラウザタブタイトル
+    page_title="浜松市周辺　救援物資配送_最適ルート",  # ブラウザタブタイトル
     page_icon="🗾",  # タブアイコン
     layout="wide"  # ページレイアウトを横幅いっぱいに設定
 )
@@ -169,7 +169,7 @@ _colors = [
 ####################################
 root_dir = os.getcwd()  # 作業ディレクトリを基準にファイルを読み込む
 
-node_data = "fujiyoshida_kyoten_geocode.json"        # 拠点データ(JSON)
+node_data = "hamamatsu_kyoten_geocode.json"        # 拠点データ(JSON)
 num_of_people = "number_of_people.csv"  # 被災者数データ(CSV)
 
 geojson_file = os.path.join(root_dir, "fujiyoshida_oshino.geojson")   # 対象市域だけの GeoJSON
@@ -909,4 +909,5 @@ if st.session_state['best_tour'] !=None:
 
 if st.session_state['redraw'] != False:
   st.rerun()
+
 
