@@ -169,7 +169,7 @@ _colors = [
 ####################################
 root_dir = os.getcwd()  # 作業ディレクトリを基準にファイルを読み込む
 
-node_data = "hamamatsu_tyuou_kyoten_geocode.json"        # 拠点データ(JSON)
+node_data = "hamamatsu_chuo_kyoten_geocode.json"        # 拠点データ(JSON)
 num_of_people = "number_of_people.csv"  # 被災者数データ(CSV)
 
 geojson_file = os.path.join(root_dir, "hamamatsu_chuo.geojson")   # 対象市域だけの GeoJSON
@@ -909,6 +909,7 @@ if st.session_state['best_tour'] !=None:
 
 if st.session_state['redraw'] != False:
   st.rerun()
+
 
 
 
