@@ -172,7 +172,7 @@ root_dir = os.getcwd()  # 作業ディレクトリを基準にファイルを読
 node_data = "hamamatsu_tyuou_kyoten_geocode.json"        # 拠点データ(JSON)
 num_of_people = "number_of_people.csv"  # 被災者数データ(CSV)
 
-geojson_file = os.path.join(root_dir, "fujiyoshida_oshino.geojson")   # 対象市域だけの GeoJSON
+geojson_file = os.path.join(root_dir, "hamamatsu_chuo.geojson")   # 対象市域だけの GeoJSON
 
 route_file = "path_list_fujiyoshida.json"  # 経路リストデータ(JSON)
 Map_Tile = 'https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png'  # 背景地図タイルURL
@@ -909,6 +909,7 @@ if st.session_state['best_tour'] !=None:
 
 if st.session_state['redraw'] != False:
   st.rerun()
+
 
 
 
